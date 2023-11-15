@@ -20,14 +20,15 @@ const NavBar = observer(() => {
     return (
         <Navbar bg="dark" variant="dark">
             <Container>
-                <NavLink style={{color:'gold'}} to={SHOP_ROUTE}>EcoGizmo</NavLink>
+                <NavLink style={{color:'lightgreen'}} to={SHOP_ROUTE}>SecondLifeTech :   Ваша стара техніка -  для когось нові можливості</NavLink>
+
                 {user.isAuth ?
                     <Nav className="ml-auto" style={{color: 'aqua'}}>
                         <Button
                             variant={"outline-light"}
                             onClick={() => history.push(ADMIN_ROUTE)}
                         >
-                            Адмін панель
+                            Продати старий гаджет
                         </Button>
                         <Button
                             variant={"outline-light"}

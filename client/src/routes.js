@@ -4,6 +4,16 @@ import Basket from "./pages/Basket";
 import Shop from "./pages/Shop";
 import Auth from "./pages/Auth";
 import DevicePage from "./pages/DevicePage";
+// routes.js
+
+
+export const routes = [
+    {
+        path: "/basket",
+        component: Basket,
+    },
+];
+
 
 export const authRoutes = [
     {

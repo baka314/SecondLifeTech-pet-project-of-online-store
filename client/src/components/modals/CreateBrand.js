@@ -20,7 +20,7 @@ const CreateBrand = ({show, onHide}) => {
         >
             <Modal.Header closeButton>
                 <Modal.Title id="contained-modal-title-vcenter">
-                    Добавить тип
+                    Додати бренд
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
@@ -28,13 +28,13 @@ const CreateBrand = ({show, onHide}) => {
                     <Form.Control
                         value={value}
                         onChange={e => setValue(e.target.value)}
-                        placeholder={"Введите название типа"}
+                        placeholder={"Введіть назву бренду"}
                     />
                 </Form>
             </Modal.Body>
             <Modal.Footer>
-                <Button variant="outline-danger" onClick={onHide}>Закрыть</Button>
-                <Button variant="outline-success" onClick={addBrand}>Добавить</Button>
+                <Button variant="outline-danger" onClick={onHide}>Зачинити</Button>
+                <Button variant="outline-success" onClick={addBrand}>Додати</Button>
             </Modal.Footer>
         </Modal>
     );
