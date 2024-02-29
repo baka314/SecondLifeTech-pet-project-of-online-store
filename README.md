@@ -25,3 +25,9 @@ Welcome to the Device Store App! This is a full-stack web application built with
   - Node.js: A runtime environment for executing JavaScript on the server side.
   - Express: A minimal and flexible Node.js web application framework.
   - PostgreSQL: A robust relational database for storing device and user information.
+    ### To run server:
+    `npm install`
+    `npm run dev`
+    ### To run client:
+     `npm install`
+     `npm start`
