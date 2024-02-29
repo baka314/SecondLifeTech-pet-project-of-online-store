@@ -59,7 +59,7 @@ const CreateDevice = observer(({show, onHide}) => {
             <Modal.Body>
                 <Form>
                     <Dropdown className="mt-2 mb-2">
-                        <Dropdown.Toggle>{device.selectedType.name || "Оберіть тип"}</Dropdown.Toggle>
+                        <Dropdown.Toggle>{"Оберіть тип" || device.selectedType.name  }</Dropdown.Toggle>
                         <Dropdown.Menu>
                             {device.types.map(type =>
                                 <Dropdown.Item
@@ -72,7 +72,7 @@ const CreateDevice = observer(({show, onHide}) => {
                         </Dropdown.Menu>
                     </Dropdown>
                     <Dropdown className="mt-2 mb-2">
-                        <Dropdown.Toggle>{device.selectedBrand.name || "Выберите тип"}</Dropdown.Toggle>
+                        <Dropdown.Toggle>{"Оберіть бренд"|| device.selectedBrand.name }</Dropdown.Toggle>
                         <Dropdown.Menu>
                             {device.brands.map(brand =>
                                 <Dropdown.Item
@@ -99,20 +99,9 @@ const CreateDevice = observer(({show, onHide}) => {
                         placeholder=""
                         type="number"
                     />
-                    <ModalTitle>Введіть стан девайсу</ModalTitle>
-                    <Form.Control
-                        value={description}
-                        onChange={e => setDescription(e.target.value)}
-                        className="mt-3"
-                        placeholder="Введіть опис стану девайсу"
-                    />
-                    <ModalTitle>Введіть контактні дані (email/telegram) для зв'язку</ModalTitle>
-                    <Form.Control
-                        value={contact}
-                        onChange={e => setContact(e.target.value)}
-                        className="mt-3"
-                        placeholder="Введіть нік в телеграм або email"
-                    />
+
+
+
                     <ModalTitle>Завантажте фото вашого девайсу</ModalTitle>
                     <Form.Control
                         className="mt-3"

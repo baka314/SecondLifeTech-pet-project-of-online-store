@@ -3,11 +3,12 @@ import {Context} from "../index";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import {NavLink} from "react-router-dom";
-import {ADMIN_ROUTE, LOGIN_ROUTE, SHOP_ROUTE} from "../utils/consts";
+import {ADMIN_ROUTE, BASKET_ROUTE, LOGIN_ROUTE, SHOP_ROUTE} from "../utils/consts";
 import {Button} from "react-bootstrap";
 import {observer} from "mobx-react-lite";
 import Container from "react-bootstrap/Container";
 import {useHistory} from 'react-router-dom'
+import BasketPage from "../pages/BasketPage";
 const NavBar = observer(() => {
     const {user} = useContext(Context)
     const history = useHistory()
@@ -18,12 +19,18 @@ const NavBar = observer(() => {
     }
 
     return (
-        <Navbar bg="dark" variant="dark">
+        <Navbar bg="dark" variant="dark" >
             <Container>
                 <NavLink style={{color:'lightgreen'}} to={SHOP_ROUTE}>SecondLifeTech :   Ваша стара техніка -  для когось нові можливості</NavLink>
 
                 {user.isAuth ?
                     <Nav className="ml-auto" style={{color: 'aqua'}}>
+                        <Button style={{marginRight:'10px'}}
+                            variant={"outline-light"}
+                            onClick={() => history.push(BASKET_ROUTE)}
+                        >
+                           Кошик
+                        </Button>
                         <Button
                             variant={"outline-light"}
                             onClick={() => history.push(ADMIN_ROUTE)}

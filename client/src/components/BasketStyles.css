@@ -1,0 +1,88 @@
+.body {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.basketTittle {
+    margin-left: 400px;
+    margin-top: 20px;
+    display: block;
+}
+
+.deviceName, .devicePrice {
+    font-size: 20px;
+}
+
+.orderPrice {
+    font-size: 28px;
+    text-decoration: underline;
+    margin-right: 8%;
+}
+
+.emptyBasketContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-left: 20px;
+
+}
+
+.messageAboutEmptyBasket {
+    font-size: 34px;
+}
+
+.btnToTheStore {
+    margin-left: 40px;
+    background: #059305;
+    font-size: 18px;
+}
+
+.btnToTheStore:hover {
+    background: #fa4987;
+}
+
+#sumOfOrder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 50px;
+    width: 90%;
+
+}
+
+h4 {
+    margin-left: 50px
+}
+
+#orderBtn {
+    margin-left: 60%;
+    height: 50px;
+    width: 120px;
+}
+
+#orderBtn:hover {
+    cursor: pointer;
+    background-color: green;
+}
+
+h3 {
+    margin-top: 50px;
+    margin-left: 35%;
+    margin-bottom: 20px
+}
+.deliveryBtn{
+    width: 10%;
+    grid-row:3 ;
+    grid-column: 1;
+
+}
+.commentBtn, .editCommentBtn{
+
+    grid-column: 2;
+    grid-row:3 ;
+}
+.btnToContinueShopping{
+    display: block;
+}
